@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "key": "e8b2a02f266976e13235",
+      "color": "#1278BD",
+      "name": "Default"
+    },
+    {
+      "key": "46ccafb94878584d989c",
+      "color": "#2BA5F7",
+      "name": "Python"
+    },
+    {
+      "key": "e48cec40c409e6ad5488",
+      "color": "#3FD941",
+      "name": "Matlab"
+    },
+    {
+      "key": "86d729dde83c4a092177",
+      "color": "#2BA5F7",
+      "name": "Ubuntu"
+    },
+    {
+      "key": "cc14a5866cfba3351bef",
+      "color": "#E8D252",
+      "name": "Math"
+    }
+  ],
+  "version": "1.0"
+}

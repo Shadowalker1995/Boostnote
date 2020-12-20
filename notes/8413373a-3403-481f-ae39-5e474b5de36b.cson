@@ -1,0 +1,16 @@
+createdAt: "2018-07-31T11:52:20.706Z"
+updatedAt: "2018-07-31T11:52:41.549Z"
+type: "SNIPPET_NOTE"
+folder: "e8b2a02f266976e13235"
+title: "随机在t.txt 中抽取5列 到L中"
+description: "随机在t.txt 中抽取5列 到L中"
+snippets: [
+  {
+    name: ""
+    mode: "text"
+    content: "一条命令就可以搞定，直接用shuf -n5 t.txt > L则随机在t.txt 中抽取5列 到L中"
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

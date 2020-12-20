@@ -1,0 +1,25 @@
+createdAt: "2018-05-17T05:37:58.893Z"
+updatedAt: "2018-05-17T05:46:31.248Z"
+type: "MARKDOWN_NOTE"
+folder: "46ccafb94878584d989c"
+title: "查看python已经安装的模块"
+content: '''
+  # 查看python已经安装的模块
+  
+  进入python，执行
+  
+  ```python
+  help('modules')
+  ```
+  
+  ![1526452450569](/home/zzhenry/Documents/assets/1526452450569.png)
+  
+  
+  
+  http://blog.topspeedsnail.com/archives/99
+'''
+tags: [
+  "python"
+]
+isStarred: false
+isTrashed: false

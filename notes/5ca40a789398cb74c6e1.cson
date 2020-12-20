@@ -1,0 +1,134 @@
+createdAt: "2018-05-17T05:34:58.975Z"
+updatedAt: "2018-05-17T05:37:13.698Z"
+type: "MARKDOWN_NOTE"
+folder: "46ccafb94878584d989c"
+title: "用python简单处理图片(5)：图像直方图"
+content: '''
+  # 用python简单处理图片(5)：图像直方图
+  
+  我们先来看两个函数reshape和flatten:
+  
+  假设我们先生成一个一维数组：
+  
+  ```python
+  vec=np.arange(15)
+  print vec
+  ```
+  
+  显示为：
+  
+  ```python
+  [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14]
+  ```
+  
+  如果我们要把这个一维数组，变成一个3*5二维矩阵，我们可以使用reshape来实现
+  
+  ```python
+  mat= vec.reshape(3,5)
+  print mat
+  ```
+  
+  显示为
+  
+  ```python
+  [[ 0  1  2  3  4]
+   [ 5  6  7  8  9]
+   [10 11 12 13 14]]
+  ```
+  
+  现在如果我们返过来，知道一个二维矩阵，要变成一个一维数组，就不能用reshape了，只能用flatten. 我们来看两者的区别
+  
+  ```python
+  a1 = mat.reshape(1,-1)  # -1表示为任意，让系统自动计算
+  print a1
+  a2 = mat.flatten()
+  print a2
+  ```
+  
+  显示为：
+  
+  ```python
+  a1: [[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14]]
+  a2: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14]
+  ```
+  
+  可以看出，用reshape进行变换，实际上变换后还是二维数组，两个方括号，因此只能用flatten.
+  
+  我们要对图像求直方图，就需要先把图像矩阵进行flatten操作，使之变为一维数组，然后再进行统计。
+  
+  ### 一、画灰度图直方图
+  
+  绘图都可以调用matplotlib.pyplot库来进行，其中的hist函数可以直接绘制直方图。
+  
+  调用方式：
+  
+  ```python
+  n, bins, patches = plt.hist(arr, bins=50, normed=1, facecolor='green', alpha=0.75)
+  ```
+  
+  hist的参数非常多，但常用的就这五个，只有第一个是必须的，后面四个可选
+  
+  arr: 需要计算直方图的一维数组
+  
+  bins: 直方图的柱数，可选项，默认为10
+  
+  normed: 是否将得到的直方图向量归一化。默认为0
+  
+  facecolor: 直方图颜色
+  
+  alpha: 透明度
+  
+  返回值 ：
+  
+  n: 直方图向量，是否归一化由参数设定
+  
+  bins: 返回各个bin的区间范围
+  
+  patches: 返回每个bin里面包含的数据，是一个list
+  
+  ```python
+  from PIL import Image
+  import numpy as np
+  import matplotlib.pyplot as plt
+  img = np.array(Image.open('d:/pic/lena.jpg').convert('L'))
+  
+  plt.figure("lena")
+  arr = img.flatten()
+  n, bins, patches = plt.hist(arr, bins=256, normed=1, facecolor='green', alpha=0.75)  
+  plt.show()
+  ```
+  
+  ![img](https://images2015.cnblogs.com/blog/140867/201601/140867-20160103162821807-542366848.png)
+  
+  ### 二、彩色图片直方图
+  
+  实际上是和灰度直方图一样的，只是分别画出三通道的直方图，然后叠加在一起。
+  
+  ```python
+  from PIL import Image
+  import numpy as np
+  import matplotlib.pyplot as plt
+  src=Image.open('d:/ex.jpg')
+  r,g,b=src.split()
+  
+  plt.figure("lena")
+  ar = np.array(r).flatten()
+  plt.hist(ar, bins=256, normed=1, facecolor='r', edgecolor='r', hold=1)
+  ag = np.array(g).flatten()
+  plt.hist(ag, bins=256, normed=1, facecolor='g', edgecolor='g',hold=1)
+  ab = np.array(b).flatten()
+  plt.hist(ab, bins=256, normed=1, facecolor='b', edgecolor='b')
+  plt.show()
+  ```
+  
+  ![img](https://images2015.cnblogs.com/blog/140867/201601/140867-20160103172422776-1019770553.png)
+  
+  由此可见，matplotlib的画图功能是非常强大的，直方图只是其中非常小的一部分，更多的请参看官方文档：
+  
+  http://matplotlib.org/api/pyplot_summary.html
+'''
+tags: [
+  "python"
+]
+isStarred: false
+isTrashed: false

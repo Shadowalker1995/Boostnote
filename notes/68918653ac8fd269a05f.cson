@@ -1,0 +1,16 @@
+createdAt: "2018-05-16T13:14:15.017Z"
+updatedAt: "2018-05-17T05:04:09.152Z"
+type: "SNIPPET_NOTE"
+folder: "86d729dde83c4a092177"
+title: "Use dmd-2.080.0"
+description: "Use dmd-2.080.0"
+snippets: [
+  {
+    name: ""
+    mode: "text"
+    content: "source ~/dlang/dmd-2.080.0/activate"
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

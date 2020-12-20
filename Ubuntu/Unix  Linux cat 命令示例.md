@@ -1,0 +1,85 @@
+# Unix / Linux cat 命令示例
+
+![cat-1000x625](http://blog.topspeedsnail.com/wp-content/uploads/2015/11/cat-1000x625.jpg)
+
+cat 命令是你学习linux最先接触的基本命令。这个命令还可以做什么？
+
+### 显示文件内容
+
+```bash
+cat file.txt
+```
+
+
+
+还可以显示多个文件内容
+
+```bash
+cat file.txt file2.txt
+```
+
+
+
+### 创建新文件
+
+用cat命令可以从把标准输入的文本重定向到文件中。当你用cat不带任何参数时，它简单的接受标准输入的内容然后在标准输出中显示出来。
+
+```bash
+cat
+
+test
+test
+```
+
+
+
+在文件尾写入
+
+```bash
+cat > file.txt
+
+Text for file.txt
+```
+
+
+
+### 拷贝文件
+
+```bash
+cat file1.txt > file2.txt
+```
+
+
+
+###  合并文件
+
+file1.txt 和file2.txt 内容合并，输出到 file3.txt 中
+
+```bash
+cat file1.txt file2.txt > file3.txt
+```
+
+
+
+### 显示行号
+
+```bash
+cat -n file.txt
+```
+
+[![Screen Shot 2015-11-17 at 2.54.42 PM](http://blog.topspeedsnail.com/wp-content/uploads/2015/11/Screen-Shot-2015-11-17-at-2.54.42-PM.png)](http://blog.topspeedsnail.com/wp-content/uploads/2015/11/Screen-Shot-2015-11-17-at-2.54.42-PM.png)
+
+### 多个空行合并为一个输出
+
+```bash
+cat -s file.txt
+```
+
+
+
+### 显示行结尾字符
+
+```bash
+cat -e file.txt
+```
+

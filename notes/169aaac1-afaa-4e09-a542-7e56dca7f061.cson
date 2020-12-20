@@ -1,0 +1,27 @@
+createdAt: "2018-10-05T03:11:33.804Z"
+updatedAt: "2018-10-05T03:27:35.685Z"
+type: "SNIPPET_NOTE"
+folder: "e8b2a02f266976e13235"
+title: "Onedrive client_secret"
+description: "Onedrive client_secret"
+snippets: [
+  {
+    name: ""
+    mode: "text"
+    content: '''
+      2150115@mail.dhu.edu.cn
+      client_secret: kzjeRATH18=]rdyQNI037}_
+      client_id: ec26775b-faf0-4741-b572-7e3594e206a8
+      
+      AADSTS65005: Using application 'oneindex' is currently not supported for your organization mail.dhu.edu.cn because it is in an unmanaged state. An administrator needs to claim ownership of the company by DNS validation of mail.dhu.edu.cn before the application oneindex can be provisioned. Request ID: ea852137-99f8-421a-bf3b-f8ffc81ea0ff, Timestamp: 10/05/2018 03:13:50 Trace ID: d43b8602-cfd0-4268-aeed-88adc5311000 Correlation ID: 3c11607a-8f30-4acc-b4d1-500284595de2 Timestamp: 2018-10-05 03:13:50Z
+      
+      h1lrpl49m@free365.tw
+      95218zz!!0130
+      yimsiELV96[*}osFKOC527)
+      8b412bdc-27af-44c5-ab8a-e4299e79a452
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

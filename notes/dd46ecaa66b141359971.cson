@@ -1,0 +1,17 @@
+createdAt: "2018-05-17T05:45:57.282Z"
+updatedAt: "2018-05-17T05:45:58.896Z"
+type: "MARKDOWN_NOTE"
+folder: "e48cec40c409e6ad5488"
+title: "MATLAB 删除文件或文件夹"
+content: '''
+  # MATLAB 删除文件或文件夹
+  
+  删除一个文件：`delete(filename) `
+  
+  删除一类文件：`delete(‘*.后缀’) `
+  
+  删除文件夹及文件夹下的文件：`rmdir(文件夹名字，'s')`
+'''
+tags: []
+isStarred: false
+isTrashed: false
