@@ -36,11 +36,11 @@ sudo vim /etc/passwd
 
 把第一行的 `/bin/bash` 改成 `/bin/zsh`，这个是 root 用户的。
 
-![2018-06-08 15-28-22 的屏幕截图](/home/zzhenry/Boostnote/Ubuntu/assets/2018-06-08 15-28-22 的屏幕截图-1528456325040.png)
+![2018-06-08 15-28-22 的屏幕截图](./assets/2018-06-08 15-28-22 的屏幕截图-1528456325040.png)
 
 把 zzhenry 一行的 `/bin/bash` 改成 `/bin/zsh`
 
-![2018-06-08 15-28-22 的屏幕截图](/home/zzhenry/Boostnote/Ubuntu/assets/2018-06-08 15-28-28 的屏幕截图.png)
+![2018-06-08 15-28-22 的屏幕截图](./assets/2018-06-08 15-28-28 的屏幕截图.png)
 
 
 
@@ -56,7 +56,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 默认安装完成的 Oh-My-Zsh 样式如下：
 
-![img](/home/zzhenry/Boostnote/Ubuntu/assets/76130-3f819dc30c3f65c5.png)
+![img](./assets/76130-3f819dc30c3f65c5.png)
 
 **Oh My Zsh 目录结构**
 
@@ -90,7 +90,7 @@ ZSH_THEME="agnoster"
 
 修改后：
 
-![img](/home/zzhenry/Boostnote/Ubuntu/assets/76130-e09bd00edd43017d.png)
+![img](./assets/76130-e09bd00edd43017d.png)
 
 2. **修改 Oh-My-Zsh agnoster 匹配字体**
 
