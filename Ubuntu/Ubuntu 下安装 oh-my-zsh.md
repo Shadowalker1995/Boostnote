@@ -110,7 +110,7 @@ ZSH_THEME="agnoster"
 
 4. **给history命令增加时间**
 
-   编辑 `~/.zdhrc`, 取消注释`HIST_STAMPS="mm/dd/yyyy"`
+   编辑 `~/.zshrc`, 取消注释`HIST_STAMPS="mm/dd/yyyy"`
 
 5. **插件**
 
